@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FE Pro Lesson 2</title>
+    <style>
+        .container {
+            border: 2px solid lightcoral;
+            display: grid;
+            /* grid-template-columns: 300px; */
+            /* grid-template-columns: 1fr 300px auto; */
+            /* grid-template-columns: min-content 200px max-content; */
+            /* grid-template-columns: 300px minmax(200px, 500px) 200px; */
+            /* min-width: 200px;
+            max-width: 500px; */
+            /* grid-template-columns: 300px minmax(200px, 1fr) 2fr; */
+            /* grid-template-columns: repeat(3, 100px) 300px;  */
+            /* grid-template-columns: repeat(2, 100px) 1fr auto;  */
+            grid-template-columns: repeat(3, 1fr) 400px;
+            grid-template-rows: repeat(3, minmax(100px, 200px));
+            /* grid-auto-flow: row dense; */
+            grid-auto-flow: row;
+
+        }
+
+        .item {
+            background-color: seagreen;
+            color: white;
+            border: 1px solid blue;
+        }
+        
+        .item > img {
+            /* width: 100%; */
+            width: auto;
+            max-height: 100%;
+            max-width: 300px;
+        }
+
+        .item4 {
+            text-align: center;
+            grid-column-start: 2;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item">item1 Lorem ipsum dolor sit amet.</div>
+        <div class="item">item2</div>
+        <div class="item">item3 Lorem ipsum dolor sit amet.</div>
+        <div class="item item4">
+            <img src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="Cat">
+        </div>
+        <div class="item">item5</div>
+        <div class="item">item6</div>
+    </div>
+
+</body>
+</html>
