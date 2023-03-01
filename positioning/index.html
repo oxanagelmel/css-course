@@ -4,81 +4,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FE Pro. Lesson 1: Positioning</title>
+    <title>FE Pro. Lesson 2: Positioning</title>
     <style>
         /* .parent {
-            width: 45%;
-            height: 500px;
-            border: 2px solid black;
-            margin: 100px auto;
-            position: relative;
-        }
-        .child {
+        width: 500px;
+        height: 500px;
+        border: 2px solid black;
+        margin: 100px auto;
+        position: relative;
+        } */
+
+        /* .child {
             width: 100px;
             height: 200px;
             background-color: orange;
-        }
-        .brother {
-            position: relative; 
-            opacity: 0.5;
-            left: 100%;
-            transform: translate(-50%, -50%);
-            text-align: center;
+
+        } */
+
+        /* .brother {
+            /* position: relative;  */
+            /* занимает место и можно добавлять изменения, child или parent не меняются */
+            /* left: 20px; */
+            /* top: 30px; */
+            /* position: absolute; */
+            /* brother остаётся на месте, а child (и все другин) думает что над ним ничего нету и занимает место brother под brother, 
+            brother выподает из потока */
+            /* left: 20px; */
+            /* отступает на 20px с лева от края экрана*/
+
+            /* position: fixed; */
+            /* блок не двигаемся когда скролиш */
+
+            /* position: absolute;
+            opacity: 0.5; */
+
+            /* top: -60px;
+            right: -60px;
+        
+            width: 120px;
+            height: 120px; */
+            /* с transform: translate() отступает половину от своей ширены/ не от родительского размера а от своего */
+            /* left: 100%; */
+            /* transform: translate(-50%, -50%); */
+            
+            /* text-align: center;
             border-radius: 50%;
             line-height: 100%;
+
             width: 30%;
-            height: 30%;
+            height: 30%; 
+
             background-color: lightgreen;
         }
-        .test {
-            transform: translate(-50%);
-            left: 230px;
+        */
+
+        /* .test {
+            transform: translate(-200px);
+            left: 200px;
             position: relative;
-            background-color: blue;
-            width: 30%;
+            background-color: lightblue;
+            width: 400px;
             height: 200px;
         } */
 
         /* body, html {
             height: 2000px;
         }
+
         .wrapper {
             border: 3px solid orange;
             position: relative;
         }
+
         .sticky {
             position: sticky;
             width: 200px;
-            left: 0;
-            top: 0;
+            top: 20px;
+            left: 120px;
+
             margin: 50px;
+            top: 50px;
+            left: 0;
             background-color: aqua;
             border: 3px solid blue;
         } */
 
         .ok {
             width: 500px;
-            box-shadow: 3px 3px 0 gray;
+            /* box-shadow: 3px 3px 0 gray; */
             margin-left: auto;
             margin-right: auto;
             border: 1px solid gray;
-        }
-
-        #id > .ok {
+            /* outline: 3px solid orange; */
             
         }
 
     </style>
 </head>
 <body>
+    <!-- Зачем нам нужно Позиционирование? 
+         = управлять местоположением Элементов отнасительно других Элементов-->
+    
     <section class="ok">ok</section>
     <section class="ok">ok</section>
     <section class="ok">ok</section>
     <section class="ok">ok</section>
     <section class="ok">ok</section>
 
-    <!-- <div class="test">test</div>
-    <div class="parent">
+
+    <!-- <div class="test">
+        test
+    </div>
+    
+         <div class="parent">
         <div class="brother">
             SALE!
         </div>
@@ -86,7 +124,8 @@
             child
         </div>
     </div>
-    <div class="parent" >
+
+    <div class="parent">
         <div class="brother">
             SALE!
         </div>
@@ -101,7 +140,7 @@
         <div>info</div>
         <div>info</div>
         <div>info</div>
-        <div>info</div>        
+        <div>info</div>
         <div>info</div>
         <div>info</div>
         <div class="sticky">sticky</div>
@@ -119,7 +158,8 @@
         <div>info</div>
         <div>info</div>
         <div>info</div>
-        <div>info</div>
+
     </div> -->
+
 </body>
 </html>
