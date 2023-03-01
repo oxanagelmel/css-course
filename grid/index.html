@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FE Pro Lesson 2</title>
+    <title>FE Pro. Lesson 2: Grid</title>
     <style>
         .container {
             border: 2px solid lightcoral;
@@ -19,11 +19,11 @@
             /* grid-template-columns: repeat(3, 100px) 300px;  */
             /* grid-template-columns: repeat(2, 100px) 1fr auto;  */
 
-            grid-template-columns: repeat(3, 100px);
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
             /* repeat(6, 1fr) - fr съедает всё пространство */
 
             /* grid-template-rows: repeat(3, minmax(100px, 200px)); */
-            grid-template-rows: repeat(3, 100px);
+            grid-template-rows: repeat(4, 100px);
 
         
             /* 1 Вариант */
@@ -78,7 +78,7 @@
             /* background: no-repeat cover / 200px 100px url('kdmflamfm'); */
             grid-area: menu;
         }
-
+        /* 1 Вариант */ 
         /* div.item4 {
             background-image: url('kldöfjosjf');
             если нужно поменять что то одно, точечное измянение
@@ -88,10 +88,33 @@
             grid-row-start: 1;
         } */
 
+        /* 2 Вариант */
+        .item3 {
+            grid-area: topic;
+        }
+        .item5 {
+            grid-area: smenu;
+        }
+        .item6 {
+            grid-area: header;
+        }
+        .item2 {
+            grid-area: content;
+        }
+
     </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+        <!-- <div class="item item3">item4</div>
+        <div class="item item3">item5</div>
+        <div class="item item3">item6</div>
+        <div class="item item3">item7</div>
+        <div class="item item3">item8</div> -->
+    </div>
 
     <!-- 1 Вариант -->
     <!-- <div class="container">
