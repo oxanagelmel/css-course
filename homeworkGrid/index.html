@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДЗ 1 : Grid</title>
+
+    <style>
+        .container {
+            border: 1px solid white;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(10, 120px);
+            text-align: center;
+            grid-template-areas: "logo menu";
+            grid-auto-flow: row;
+            align-items: stretch;
+            
+        }
+
+        .item1 {
+            background-color: lightgoldenrodyellow;
+            border: 1px solid rgb(237, 207, 97);
+            grid-area: 1 / 1 / 1 / 4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item2 {
+            background-color: rgb(188, 222, 244);
+            border: 1px solid rgb(84, 84, 240);
+            grid-area: 1 / 4 / 1 / 13;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item3 {
+            background-color: rgb(193, 240, 193);
+            border: 1px solid rgb(107, 145, 107);
+            grid-area: 2 / 1 / 6 / 13;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .item4 {
+            background-color: rgb(211, 172, 230);
+            border: 1px solid rgb(109, 63, 133);
+            grid-area: 6 / 1 / 10 / 6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item5 {
+            background-color: lightgoldenrodyellow;
+            border: 1px solid rgb(237, 207, 97);
+            grid-area: 6 / 6 / 8 / 9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item6 {
+            background-color: rgb(233, 160, 168);
+            border: 1px solid rgb(220, 117, 122);
+            grid-area: 6 / 9 / 8 / 13;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item7 {
+            background-color: rgb(72, 142, 234);
+            border: 1px solid rgb(54, 112, 187);
+            grid-area: 8 / 6 / 10 / 13;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item8 {
+            background-color: rgb(106, 224, 237);
+            border: 1px solid rgb(52, 145, 155);
+            grid-area: 10 / 1 / 11 / 13;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">LOGO</div>
+        <div class="item2">MENU</div>
+        <div class="item3">HEADER</div>
+        <div class="item4">CONTENT</div>
+        <div class="item5">CONTENT</div>
+        <div class="item6">IMAGE</div>
+        <div class="item7">EXTRA</div>
+        <div class="item8">FOOTER</div>
+    </div>
+</body>
+</html>
