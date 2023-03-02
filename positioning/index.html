@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FE Pro. Lesson 1: Positioning</title>
     <style>
-        /* .parent {
+        .parent {
         width: 500px;
         height: 500px;
         border: 2px solid black;
         margin: 100px auto;
         position: relative;
-        } */
+        }
 
-        /* .child {
+        .child {
             width: 100px;
             height: 200px;
             background-color: orange;
 
-        } */
+        }
 
-        /* .brother {
-            /* position: relative;  */
+        .brother {
+            position: relative; 
             /* занимает место и можно добавлять изменения, child или parent не меняются */
             /* left: 20px; */
             /* top: 30px; */
@@ -35,28 +35,28 @@
             /* position: fixed; */
             /* блок не двигаемся когда скролиш */
 
-            /* position: absolute;
-            opacity: 0.5; */
+            position: absolute;
+            /* opacity: 0.5; */
 
-            /* top: -60px;
+            top: -60px;
             right: -60px;
         
             width: 120px;
-            height: 120px; */
+            height: 120px;
             /* с transform: translate() отступает половину от своей ширены/ не от родительского размера а от своего */
             /* left: 100%; */
             /* transform: translate(-50%, -50%); */
             
-            /* text-align: center;
+            text-align: center;
             border-radius: 50%;
-            line-height: 100%;
+            line-height: 120px;
 
-            width: 30%;
-            height: 30%; 
+            /* width: 30%;
+            height: 30%;  */
 
             background-color: lightgreen;
         }
-        */
+       
 
         /* .test {
             transform: translate(-200px);
@@ -67,9 +67,9 @@
             height: 200px;
         } */
 
-        /* body, html {
+        body, html {
             height: 2000px;
-        }
+        } 
 
         .wrapper {
             border: 3px solid orange;
@@ -87,17 +87,17 @@
             left: 0;
             background-color: aqua;
             border: 3px solid blue;
-        } */
+        }
 
-        .ok {
+        /* .ok {
             width: 500px;
-            /* box-shadow: 3px 3px 0 gray; */
+            box-shadow: 3px 3px 0 gray;
             margin-left: auto;
             margin-right: auto;
             border: 1px solid gray;
-            /* outline: 3px solid orange; */
+            outline: 3px solid orange;
             
-        }
+        } */
 
     </style>
 </head>
@@ -105,17 +105,17 @@
     <!-- Зачем нам нужно Позиционирование? 
          = управлять местоположением Элементов отнасительно других Элементов-->
     
+    <!-- <section class="ok">ok</section>
     <section class="ok">ok</section>
     <section class="ok">ok</section>
     <section class="ok">ok</section>
-    <section class="ok">ok</section>
-    <section class="ok">ok</section>
+    <section class="ok">ok</section> -->
 
 
     <!-- <div class="test">
         test
     </div>
-    
+     -->
          <div class="parent">
         <div class="brother">
             SALE!
@@ -132,9 +132,9 @@
         <div class="child">
             child
         </div>
-    </div> -->
+    </div>
 
-    <!-- <div class="wrapper">
+    <div class="wrapper">
         <div>info</div>
         <div>info</div>
         <div>info</div>
@@ -159,7 +159,7 @@
         <div>info</div>
         <div>info</div>
 
-    </div> -->
+    </div>
 
 </body>
 </html>
