@@ -1,0 +1,114 @@
+body {
+    font-family: 'segoe ui', sans-serif;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
+    margin-top: 70px ;
+    /* gap это отступ у грида между ячейками */
+    /* row-gap: 10px; */
+}
+
+.news {
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+    font-size: 22px;
+    /* margin-bottom: 30px; */
+    margin: 5px 0;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.menu-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 5px 6px 4px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    list-style-type: none;
+}
+
+i.menu-icon {
+    display: none;
+}
+
+
+/* пишится от большего к меньшему и самое нижнее выбирается */
+/* max-width: максимально и не больше 1000 */
+@media screen and (max-width: 1000px) {
+    .title {
+        color: purple;
+        /* flex-wrap: wrap; */
+    }
+
+    .subtitle {
+        color: orange;
+    }
+
+/* для tablet на 2 колонки калонку */
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .title {
+        color: lightcoral;
+        font-size: 40px;
+    }
+
+/* для mobile на одну калонку */
+    .parent {
+        grid-template-columns: 1fr;
+    }
+
+    i.menu-icon {
+        display: block;
+        cursor: pointer;
+        color: green;
+    }
+
+    .menu {
+        display: none;
+    }
+    
+    .menu-wrapper {
+        padding: 25px;
+    }
+
+    /* .news {
+        border-radius: 50%;
+    } */
+}
+
+/* @media screen and (max-width: 800px) {
+    .title {
+        color: lightcoral;
+        font-size: 40px;
+    }
+} */
+
+/* @media screen and (aspect-ratio: 16/9) { 
+} */
+/* @media screen and (orientation: landscape) {
+} */
+
+
