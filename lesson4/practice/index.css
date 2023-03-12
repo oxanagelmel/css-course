@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'ABeeZee', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+}
+.content {
+    max-width: 1296px;
+    margin: 0 auto;
+
+}
+
+.social-menu {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    padding-right: 28px;
+}
+
+.social-links {
+    gap: 60px;
+    display: flex;
+    list-style-type: none;
+    /* что бы лого стояли рядом и подняты*/
+    color: #4FBFA5;
+    font-size: 24px;
+    align-items: center;
+}
+
+/* .social-links .fa-brands {
+    font-size: 24px;
+} */
+
+.main-header {
+    background-color: #4FBFA5;
+}
+
+.main-menu-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 23px 0;
+    color: #fff;
+}
+
+.main-menu {
+    list-style-type: none;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-menu > li {
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.main-menu > li:hover {
+    text-decoration: underline;
+}
+
+.call-btn {
+    font-family: 'ABeeZee', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 10px 50px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.call-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.header-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 50px; */
+    padding: 25px 0 57px 0;
+}
+
+/* .header-info > * {
+    flex-grow: 1;
+} */
+
+.header-text {
+    color: #fff;
+    max-width: 416px;
+}
+
+.header-text > h2 {
+    font-size: 48px;
+    line-height: 72px;
+    margin-bottom: 20px;
+}
+
+.header-text > p {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 40px;
+}
+
+.header-text > button {
+    padding: 15px 25px;
+    background-color: #00868A;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+/* картинка бутылок уменьшается вместе со страничкой  а не обрезается*/
+.header-image > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+main.content {
+    margin-top: 146px;
+}
+
+main > header {
+    text-align: center;
+    font-size: 48px;
+    line-height: 72px;
+    color: #00868A;
+    margin-bottom: 60px;
+}
+
+.products {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(306px, 1fr));
+    grid-template-rows: 343px;
+    gap: 24px;
+}
+
+.product-bg {
+    height: 230px;
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.product-bg > img {
+    width: 100%;
+    /* это нужно что бы картинки контролировались её родителемЮ размер родителя будет контролироваться гридом*/
+    object-fit: cover;
+}
+
+.product-bg:hover {
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.product-description {
+    background-color: #00868A;
+    color: #fff;
+    padding: 25px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 113px;
+}
+
+.product-description > button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.product-description > span {
+    line-height: 31px;
+    font-size: 21px;
+}
+
+.new {
+    position: relative;
+}
+
+.new::after {
+    content: 'NEW';
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background-color: #4FBFA5;
+    color: #fff;
+    padding: 10px;
+}
+
+.social-links-footer {
+    /* padding: 167px 0px 70px 1000px; */
+    padding-top: 167px;
+    padding-bottom: 70px;
+    gap: 60px;
+    display: flex;
+    list-style-type: none;
+    /* что бы лого стояли рядом и подняты*/
+    color: #4FBFA5;
+    font-size: 24px;
+    align-items: center;
+}
+
+
+
+
+@media  screen and (max-width: 1200px) {
+    .content {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .main-menu-wrapper {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: flex-end;
+    }
+}
+@media screen and (max-width: 700px) {
+    .main-menu {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+    main > header {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .header-info {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .header-text > h2 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .social-links {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    .social-links-footer {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+}
