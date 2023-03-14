@@ -203,6 +203,7 @@ main > header {
     /* padding: 167px 0px 70px 1000px; */
     padding-top: 167px;
     padding-bottom: 70px;
+    margin: 0 auto;
     gap: 60px;
     display: flex;
     list-style-type: none;

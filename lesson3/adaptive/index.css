@@ -62,7 +62,7 @@ i.menu-icon {
         color: orange;
     }
 
-/* для tablet на 2 колонки калонку */
+/* для tablet на 2 колонки */
     .parent {
         grid-template-columns: repeat(2, 1fr);
     }
