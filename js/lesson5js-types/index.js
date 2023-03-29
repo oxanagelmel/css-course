@@ -103,3 +103,5 @@ console.log( typeof typeof 2);
 
 // в булевый:
 // Boolean();
+
+
