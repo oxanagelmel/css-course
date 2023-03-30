@@ -132,3 +132,58 @@ console.log( typeof typeof 2);
 // true + null --> 1 = преобразует всё в числа 
 
 // typeof Infinity --> number
+
+// +false --> 0 = неявное преобразование к числу с помощью арефметическим оператором --> все 
+// 2 * null --> 0
+
+// 2 * !null (--> boolean) --> 2 * true --> 2 * 1 --> 1
+
+
+// undefined + 'hi!' --> 'undefinedhi!'
+
+
+// NaN не равен сам себе
+// NaN === NaN - false
+// NaN == NaN - false
+// NaN > NaN - false
+// NaN < NaN - false
+// NaN !== NaN - true
+
+// isNaN('ldfjldj') --> true
+// isNaN('  2') --> false
+
+// 10 % 2 --> 0
+
+
+// let a = 2;
+// let b = 3;
+
+// a = a + b;
+// a += b;
+
+// a = a - b;
+// a -= b;
+
+// a = a * b;
+// a *= b;
+
+// a = a / b;
+// a /= b;
+
+
+
+// Инкременты:
+
+// let a = 1;
+// a++;
+// let b = a++ +3;
+// console.log(a);
+
+// console.log(a++); увеличивает после того как завершится
+// console.log(++а); увеличивает до того как завершится
+
+
+// Декременты:
+// let a = 1;
+// a--;
+// console.log(a);
