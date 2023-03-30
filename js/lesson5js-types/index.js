@@ -187,3 +187,11 @@ console.log( typeof typeof 2);
 // let a = 1;
 // a--;
 // console.log(a);
+
+// for(let i = 0; i < 10; ++i) {
+//     console.log(i);
+// }
+
+// while (a < 10) {
+//     console.log(++a);
+// }
