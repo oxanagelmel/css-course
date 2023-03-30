@@ -95,7 +95,8 @@ console.log( typeof typeof 2);
 
 
 
-// ПРЕОБРАЗОВАНИЕ 
+// ПРЕОБРАЗОВАНИЕ
+
 // в строку:
 // String();
 // 2 + ''
@@ -103,5 +104,31 @@ console.log( typeof typeof 2);
 
 // в булевый:
 // Boolean();
+// !!2 - true
+// !2 - false
+// Boolean(' '); - true - так как есть пробел
 
+// в число:
+// Number();
+// Number(false) --> 0
+// Number(true)  --> 1
+// Number('lkadfljdjfdjöfj') --> NaN
 
+// typeof NaN --> "number"
+
+// 'aldjfjdf' - 2 --> NaN 
+// 'aldjfjdf' * 2 --> NaN 
+// --> NaN это когда в пытаетесь сделать арифметическое вычесление но js не понимает как его вычеслить
+
+// 2/10-NaN*51-2**3 - есль есть хоть один NaN, то всё NaN 
+
+// Number(null) --> 0  - ближашее число
+// Number('2') --> 2 - если в строку только число
+// Number('2x') --> NaN
+// Number('2 5') --> NaN
+// Number('  25   ') --> 25
+// Number('true2') --> NaN 
+
+// true + null --> 1 = преобразует всё в числа 
+
+// typeof Infinity --> number
