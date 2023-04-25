@@ -24,6 +24,11 @@ console.log("Connected");
 //     console.log('privet');
 // }
 
+// Не очень хороший вариант так как нету else
+// console.log(
+//     age < 10 ? 'hi!' : age < 20 ? 'hello!' : age < 30 ? 'good day' : age < 40 ? 'privet' : null
+// );
+
 
 // Если нужно чтобы несколько проверок произошли
 // if (age < 10) {         
