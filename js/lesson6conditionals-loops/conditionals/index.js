@@ -105,7 +105,7 @@ console.log("Connected");
 
 // применяется для того чтобы он вернул что то первое или что то второе
 
-let age = 10;
+// let age = 10;
 
 // НЕ ПРАВИЛЬНО
 // const result = age > 18 ? console.log('hello') : console.log('hi');
@@ -117,12 +117,12 @@ let age = 10;
 // Тернарным оператором нужно пользоваться тогда когда то что он возвращает, вы этим будете пользоваться. Например вывести в консоль или запустить prompt usw.
 
 // ПРАВИЛЬНЫЙ СПОСОБ использовать Тернарный Оператор:
-console.log(age > 18 ? 'hello' : 'hi');
+// console.log(age > 18 ? 'hello' : 'hi');
 
 
-let dayNumber = 2;
+// let dayNumber = 2;
 
-console.log(dayNumber > 4 ? 'Oleg' : 'Anna');
+// console.log(dayNumber > 4 ? 'Oleg' : 'Anna');
 
 // если условие true то оператор возвращает нам первое от двоиточия --> 'Oleg'
 // если условие false то второе --> 'Anna'
@@ -135,3 +135,43 @@ console.log(dayNumber > 4 ? 'Oleg' : 'Anna');
 // }
 
 
+// let age = 20;
+
+// age > 10 && age < 20 ? 'hi!' : 'hello!';
+
+
+// const userName = prompt('hi there!');
+
+// if (userName === 'Petya') {
+//     // console.log(
+//     //     'You are' + userName + 'and we greet you!'
+//     // );
+    
+//     console.log(
+//         `You are ${userName} and we greet you!`
+//     );
+
+//     console.log(
+//         `You are ${ 10 ? 'a' : 'b'} and we greet you!`
+//     );
+// }
+
+// 1. Создать программу в которой сравнивается возраст 2 человек.
+//    Еслт возраст Федота больше чем у Митрофана, то должно выводится сообщение, в котором указана разница в возрасте: ' Федот старше Митрофана на 3'.
+// Если возраст Митрофана больше, то выводится такое сообщение: 'Митрофан старше на 5'.
+// Если возраст одинаковый то 'Фидот и Митрофан одного возраста'.
+
+// 2. ользователь вводит ТРИ числа вывести в консоль наибольшее из них.
+
+// 1.
+const fedotAge = Number(prompt('enter first age'));
+const mitrofanAge = Number(prompt('enter second age'));
+// преобразовать в цифры с помощью Number()
+
+if (fedotAge > mitrofanAge) {
+    console.log( `Fedot is older than Mitrofan by ${fedotAge - mitrofanAge}`);
+} else if (mitrofanAge > fedotAge) {
+    console.log(`Mitrofan is older than Fedot by ${mitrofanAge - fedotAge}`);
+} else {
+    console.log('Their ages are equal!');
+}

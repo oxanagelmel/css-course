@@ -65,16 +65,15 @@ console.log(age < 10 ? 'hi!' : age < 20 ? 'hello!' : 'good day');
 
 //     Если пользователь ввел правильный ответ, то выводим сообщение вида: Правильно!
 
-let numberA = 3;
-let numberB = 2;
-let correctAnswer = (numberA * numberB);
+const firstNumber = Number(prompt('Enter the first Number'));
+const secondNumber = Number(prompt('Enter the second Number'));
+const yourAnswer= Number(prompt('Enter the answer for first Number * second Number!'));
 
-let yourAnswer = 3;
+const correctAnswer = firstNumber * secondNumber;
 
-if (yourAnswer < correctAnswer){
+
+if (yourAnswer != correctAnswer){
     console.log('Ошибка!');
-} else if (yourAnswer > correctAnswer){
-    console.log('Ошибка!')
 } else {
     console.log('Правильно!');
 }
