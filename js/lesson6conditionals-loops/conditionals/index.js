@@ -129,4 +129,4 @@ console.log(dayNumber > 4 ? 'Oleg' : 'Anna');
 //     console.log('hi');
 // }
 
-//conditionals
+
