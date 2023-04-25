@@ -117,7 +117,7 @@ console.log(age > 18 ? 'hello' : 'hi');
 
 let dayNumber = 2;
 
-dayNumber > 4 ? 'Oleg' : 'Anna';
+console.log(dayNumber > 4 ? 'Oleg' : 'Anna');
 
 // если условие true то оператор возвращает нам первое от двоиточия --> 'Oleg'
 // если условие false то второе --> 'Anna'
@@ -128,3 +128,5 @@ dayNumber > 4 ? 'Oleg' : 'Anna';
 // } else {
 //     console.log('hi');
 // }
+
+//conditionals
