@@ -4,11 +4,26 @@
 // В этой задаче необходимо сделать проверку на число (нужно убедиться, 
 // что пользователь ввел именно число)
 
-function isNumber(num) {
-    return typeof num === 'number' && !isNaN(num);
+const a = Number(prompt('enter first number!'));
+const b = Number(prompt('enter second number!'));
+const c = Number(prompt('enter third number!'));
+
+if (a > b && a > c) {
+    console.log('This is the biggest number!');
+}else if (b > a && b < c) {
+    console.log('This is the biggest number!');
+}else if (c > a && c > b) {
+    console.log('This is the biggest number!');
+}else {
+    console.log('This is NOT the biggest number!');
 }
 
-console.log(isNumber(3));
+
+// function isNumber(num) {
+//     return typeof num === 'number' && !isNaN(num);
+// }
+
+// console.log(isNumber(3));
 
 
 // 2. Используя конструкцию switch, напишите программу, которая переводит числа в слова. 
@@ -69,15 +84,15 @@ console.log(age < 10 ? 'hi!' : age < 20 ? 'hello!' : 'good day');
 
 //     Если пользователь ввел правильный ответ, то выводим сообщение вида: Правильно!
 
-const firstNumber = Number(prompt('Enter the first Number'));
-const secondNumber = Number(prompt('Enter the second Number'));
-const yourAnswer= Number(prompt('Enter the answer for first Number * second Number!'));
+// const firstNumber = Number(prompt('Enter the first Number'));
+// const secondNumber = Number(prompt('Enter the second Number'));
+// const yourAnswer= Number(prompt('Enter the answer for first Number * second Number!'));
 
-const correctAnswer = firstNumber * secondNumber;
+// const correctAnswer = firstNumber * secondNumber;
 
 
-if (yourAnswer != correctAnswer){
-    console.log('Ошибка!');
-} else {
-    console.log('Правильно!');
-}
+// if (yourAnswer != correctAnswer){
+//     console.log('Ошибка!');
+// } else {
+//     console.log('Правильно!');
+// }
